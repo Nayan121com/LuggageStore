@@ -36,7 +36,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics   
     
     - name: Publish to Docker Hub
-      uses: docker/build-push-action@vi\
+      uses: docker/build-push-action@v1
       with:
           username: $11 secrets.DOCKER_USERNAME}} 
           password: $(( secrets.DOCKER_PASSWORD}}
