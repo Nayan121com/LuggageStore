@@ -38,7 +38,7 @@ jobs:
     - name: Publish to Docker Hub
       uses: docker/build-push-action@v2
       with:
-          username: $11 secrets.DOCKER_USERNAME}} 
-          password: $(( secrets.DOCKER_PASSWORD}}
-          repository: seesharprun/next
-          tags: latest, $(( github.run_number}}
+          username: ${{ secrets.USERNAME}} 
+          password: ${{ secrets.PASSWORD}}
+          repository: nkmg123/shell_training_project_nayan
+          tags: latest, ${{ github.run_number}}
